@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba de Modelo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Prueba tu modelo</h1>
+    <form id="predictionForm">
+        <button type="submit">Predecir</button>
+    </form>
+    <div id="predictionResult"></div>
+    <script>
+        document.getElementById('predictionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Obtén los valores de los campos de entrada y envíalos a la API /predict
+            fetch('/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ features: [/* Tus valores de entrada aquí */] })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('predictionResult').textContent = JSON.stringify(data);
+            });
+        });
+    </script>
+</body>
+</html>
