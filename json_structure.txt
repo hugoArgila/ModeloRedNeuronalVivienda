@@ -1,0 +1,24 @@
+{
+  "features": [
+    { "air_conditioner": 1.000000e+00 },
+    { "balcony": 0.000000e+00 },
+    { "bath_num": 2.000000e+00 },
+    { "built_in_wardrobe": 0.000000e+00 },
+    { "chimney": 0.000000e+00 },
+    { "garden": 0.000000e+00 },
+    { "m2_real": 1.400000e+02 },
+    { "reduced_mobility": 0.000000e+00 },
+    { "room_num": 3.000000e+00 },
+    { "storage_room": 0.000000e+00 },
+    { "swimming_pool": 1.000000e+00 },
+    { "terrace": 0.000000e+00 },
+    { "condition_freq": 9.098071e-01 },
+    { "energetic_certif_freq": 2.288987e-01 },
+    { "loc_full_freq": 6.114148e-03 },
+    { "loc_zone_freq": 1.375402e-01 },
+    { "obtention_date_freq": 2.788183e-01 },
+    { "floor_freq": 2.321945e-01 },
+    { "loc_city_freq": 3.967042e-02 },
+    { "house_type_freq": 3.876608e-01 }
+  ]
+}
